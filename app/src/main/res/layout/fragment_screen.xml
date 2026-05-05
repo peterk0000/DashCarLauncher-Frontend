@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rect_border"
+            android:text="Radio"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="8pt"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rect_border"
+            android:text="Phone"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="8pt"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/music"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rect_border"
+            android:gravity="center"
+            android:text="Music"
+            android:textColor="@color/white"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="21.04.2026"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="6pt"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="12pt"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/action_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/grey"
+            android:text=""/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/radio_right"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rect_border"
+            android:text=""/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/action_btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/grey"
+            android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>

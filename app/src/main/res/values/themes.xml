@@ -1,7 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="CustomButton" parent="Widget.AppCompat.Button.Borderless">
-        <item name="android:background">@color/grey</item>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DashCarLauncher" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.DashCarLauncherFrontend" parent="Base.Theme.DashCarLauncherFrontend" />
+    <style name="Theme.DashCarLauncher" parent="Base.Theme.DashCarLauncher" />
 </resources>
