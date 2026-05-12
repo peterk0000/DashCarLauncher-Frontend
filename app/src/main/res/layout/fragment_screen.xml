@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="32dp">
+    android:padding="32dp"
+    android:background="#000000">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -17,11 +19,13 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/rect_border"
+            android:background="@drawable/rounded_button"
             android:text="Radio"
             android:textColor="@color/white"
             android:gravity="center"
-            android:textSize="8pt"/>
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/phone"
@@ -29,11 +33,13 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/rect_border"
+            android:background="@drawable/rounded_button"
             android:text="Phone"
             android:textColor="@color/white"
             android:gravity="center"
-            android:textSize="8pt"/>
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/music"
@@ -41,38 +47,54 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/rect_border"
+            android:background="@drawable/rounded_button"
             android:gravity="center"
             android:text="Music"
             android:textColor="@color/white"
-            android:textSize="8pt" />
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="21.04.2026"
-            android:textColor="@color/black"
+            android:text="12.05.2026"
+            android:textColor="@color/white"
             android:gravity="center"
-            android:textSize="6pt"/>
+            android:textSize="6pt"
+            android:fontFamily="sans-serif"/>
+
         <TextView
             android:id="@+id/time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="12:00"
-            android:textColor="@color/black"
+            android:text="19:00"
+            android:textColor="@color/white"
             android:gravity="center"
-            android:textSize="12pt"/>
+            android:textSize="16pt"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"/>
 
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="20°C"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="8pt"
+            android:fontFamily="sans-serif"/>
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="0dp"
@@ -87,9 +109,9 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Light"
-            android:background="@color/grey"
-            android:text=""/>
+            android:background="@drawable/rounded_button"
+            android:text=""
+            android:textColor="@color/white"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/radio_right"
@@ -97,8 +119,9 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/rect_border"
-            android:text=""/>
+            android:background="@drawable/rounded_button"
+            android:text=""
+            android:textColor="@color/white"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/action_btn_2"
@@ -106,9 +129,9 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Light"
-            android:background="@color/grey"
-            android:text=""/>
+            android:background="@drawable/rounded_button"
+            android:text=""
+            android:textColor="@color/white"/>
     </LinearLayout>
 
 </LinearLayout>
