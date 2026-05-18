@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/tool_icon"
+        android:layout_width="60dp"
+        android:layout_height="54dp"
+        android:src="@drawable/volume"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tool_name"
+        android:layout_width="352dp"
+        android:layout_height="54dp"
+        android:text="Громкость"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12pt"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
